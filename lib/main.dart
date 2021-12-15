@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:tictactoe/check.dart';
 
 // import 'package:get/get.dart';
@@ -43,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ball(80.0, 1),
                   Text(
-                    "x${ballsPresent[0][3]}",
+                    " x${ballsPresent[0][3]}",
                     style: TextStyle(color: player1, fontSize: 15),
                   ),
                 ],
@@ -54,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ball(60.0, 1),
                   Text(
-                    "x${ballsPresent[0][2]}",
+                    " x${ballsPresent[0][2]}",
                     style: TextStyle(color: player1, fontSize: 15),
                   ),
                 ],
@@ -65,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ball(40.0, 1),
                   Text(
-                    "x${ballsPresent[0][1]}",
+                    " x${ballsPresent[0][1]}",
                     style: TextStyle(color: player1, fontSize: 15),
                   ),
                 ],
@@ -76,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ball(20.0, 1),
                   Text(
-                    "x${ballsPresent[0][0]}",
+                    " x${ballsPresent[0][0]}",
                     style: TextStyle(color: player1, fontSize: 15),
                   ),
                 ],
@@ -95,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   emptyBall(80.0, 1),
                   Text(
-                    "x${ballsPresent[0][3]}",
+                    " x${ballsPresent[0][3]}",
                     style: TextStyle(color: player1, fontSize: 15),
                   ),
                 ],
@@ -106,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   emptyBall(60.0, 1),
                   Text(
-                    "x${ballsPresent[0][2]}",
+                    " x${ballsPresent[0][2]}",
                     style: TextStyle(color: player1, fontSize: 15),
                   ),
                 ],
@@ -117,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   emptyBall(40.0, 1),
                   Text(
-                    "x${ballsPresent[0][1]}",
+                    " x${ballsPresent[0][1]}",
                     style: TextStyle(color: player1, fontSize: 15),
                   ),
                 ],
@@ -128,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   emptyBall(20.0, 1),
                   Text(
-                    "x${ballsPresent[0][0]}",
+                    " x${ballsPresent[0][0]}",
                     style: TextStyle(color: player1, fontSize: 15),
                   ),
                 ],
@@ -147,7 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ball(80.0, 2),
                   Text(
-                    "x${ballsPresent[1][3]}",
+                    " x${ballsPresent[1][3]}",
                     style: TextStyle(color: player2, fontSize: 15),
                   ),
                 ],
@@ -158,7 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ball(60.0, 2),
                   Text(
-                    "x${ballsPresent[1][2]}",
+                    " x${ballsPresent[1][2]}",
                     style: TextStyle(color: player2, fontSize: 15),
                   ),
                 ],
@@ -169,7 +168,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ball(40.0, 2),
                   Text(
-                    "x${ballsPresent[1][1]}",
+                    " x${ballsPresent[1][1]}",
                     style: TextStyle(color: player2, fontSize: 15),
                   ),
                 ],
@@ -180,7 +179,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ball(20.0, 2),
                   Text(
-                    "x${ballsPresent[1][0]}",
+                    " x${ballsPresent[1][0]}",
                     style: TextStyle(color: player2, fontSize: 15),
                   ),
                 ],
@@ -199,7 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   emptyBall(80.0, 2),
                   Text(
-                    "x${ballsPresent[1][3]}",
+                    " x${ballsPresent[1][3]}",
                     style: TextStyle(color: player2, fontSize: 15),
                   ),
                 ],
@@ -210,7 +209,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   emptyBall(60.0, 2),
                   Text(
-                    "x${ballsPresent[1][2]}",
+                    " x${ballsPresent[1][2]}",
                     style: TextStyle(color: player2, fontSize: 15),
                   ),
                 ],
@@ -221,7 +220,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   emptyBall(40.0, 2),
                   Text(
-                    "x${ballsPresent[1][1]}",
+                    " x${ballsPresent[1][1]}",
                     style: TextStyle(color: player2, fontSize: 15),
                   ),
                 ],
@@ -232,7 +231,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   emptyBall(20.0, 2),
                   Text(
-                    "x${ballsPresent[1][0]}",
+                    " x${ballsPresent[1][0]}",
                     style: TextStyle(color: player2, fontSize: 15),
                   ),
                 ],
@@ -272,88 +271,133 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  String dropdownvalue = 'Item 1';
+
+  // List of items in our dropdown menu
+  var items = [
+    'Item 1',
+    'Item 2',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tii"),
+        title: Text(
+          "Tii",
+          style: TextStyle(),
+          textAlign: TextAlign.center,
+        ),
         backgroundColor: backgroundColor,
         actions: [
+          DropdownButton(
+            // Initial Value
+            value: dropdownvalue,
+
+            // Down Arrow Icon
+            icon: const Icon(Icons.keyboard_arrow_down),
+
+            // Array list of items
+            items: items.map((String items) {
+              return DropdownMenuItem(
+                value: items,
+                child: Container(
+                  height: 50,
+                  width: 50,
+                  decoration: BoxDecoration(color: player1),
+                ),
+              );
+            }).toList(),
+            // After selecting the desired option,it will
+            // change button value to selected value
+            onChanged: (String? newValue) {
+              setState(() {
+                dropdownvalue = newValue!;
+              });
+            },
+          ),
           IconButton(
               onPressed: () {
                 reset();
               },
-              icon: const Icon(Icons.reset_tv_rounded))
+              icon: const Icon(Icons.reset_tv_rounded)),
+          IconButton(
+            onPressed: () {
+              // reset();
+            },
+            icon: const Icon(Icons.info),
+          ),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            SizedBox(
-              height: 10,
-            ),
-            playerwon
-                ? Text(
-                    "Player ${currentPlayer == 2 ? 1 : 2} won",
-                    style: TextStyle(
-                        color: currentPlayer == 1 ? player2 : player1,
-                        fontSize: 30),
-                  )
-                : Text(
-                    "Player $currentPlayer turn",
-                    style: TextStyle(
-                        color: currentPlayer == 1 ? player1 : player2,
-                        fontSize: 30),
-                  ),
-            SizedBox(height: 30),
-            Text(
-              "Player 1",
-              style: TextStyle(color: player1, fontSize: 22),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            currentPlayer == 1 ? player1Drag() : player1NoDrag(),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                slot(0, currentPlayer),
-                slot(1, currentPlayer),
-                slot(2, currentPlayer),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                slot(3, currentPlayer),
-                slot(4, currentPlayer),
-                slot(5, currentPlayer),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                slot(6, currentPlayer),
-                slot(7, currentPlayer),
-                slot(8, currentPlayer),
-              ],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            currentPlayer == 2 ? player2Drag() : player2NoDrag(),
-            const SizedBox(
-              height: 10,
-            ),
-            Text(
-              "Player 2",
-              style: TextStyle(color: player2, fontSize: 22),
-            ),
-          ],
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              playerwon
+                  ? Text(
+                      "Player ${currentPlayer == 2 ? 1 : 2} won",
+                      style: TextStyle(
+                          color: currentPlayer == 1 ? player2 : player1,
+                          fontSize: 30),
+                    )
+                  : Text(
+                      "Player $currentPlayer turn",
+                      style: TextStyle(
+                          color: currentPlayer == 1 ? player1 : player2,
+                          fontSize: 30),
+                    ),
+              SizedBox(height: 30),
+              Text(
+                "Player 1",
+                style: TextStyle(color: player1, fontSize: 22),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              currentPlayer == 1 ? player1Drag() : player1NoDrag(),
+              const SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  slot(0, currentPlayer),
+                  slot(1, currentPlayer),
+                  slot(2, currentPlayer),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  slot(3, currentPlayer),
+                  slot(4, currentPlayer),
+                  slot(5, currentPlayer),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  slot(6, currentPlayer),
+                  slot(7, currentPlayer),
+                  slot(8, currentPlayer),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              currentPlayer == 2 ? player2Drag() : player2NoDrag(),
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Player 2",
+                style: TextStyle(color: player2, fontSize: 22),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -446,20 +490,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   );
                 });
-            // Get.defaultDialog(
-            //   title: "TicTacToe",
-            // middleText: "Player $currentPlayer won",
-            // titleStyle: const TextStyle(color: Colors.black),
-            // textConfirm: "Reset",
-            // confirmTextColor: Colors.white,
-            // buttonColor: Colors.red,
-            // // barrierDismissible: false,
-            // radius: 10,
-            // onConfirm: () {
-            //   reset();
-            // }
-            // );
-
           }
           ballsPresent[currentPlayer - 1][ballSize ~/ 20 - 1]--;
           currentPlayer = togglePlayer(currentPlayer);

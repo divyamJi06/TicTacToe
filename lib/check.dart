@@ -37,25 +37,8 @@ List newTic = [
   [0, 0]
 ];
 
-// List newBallsPresent = [
-//   [4, 3, 2, 1],
-//   [4, 3, 2, 1]
-// ];
-
-// void reset() {
-//   tic.clear();
-//   tic.addAll(newTic);
-//   ballsPresent.clear();
-//   ballsPresent.addAll(newBallsPresent);
-// }
-
-// Color player1 = Color(0xFFFF0000);
 Color player2 = Color(0xFF00FF00);
 Color player1 = Color(0xFFED0800);
-
-// Color player1 = Color(0xFFFF033E);
-// Color player2 = Color(0xFF39FF14);
-// Color player2 = Color(0xFF0000FF);
 Color backgroundColor = const Color(0xFF000000);
 
 bool checkVertical() {
